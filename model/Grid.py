@@ -1,5 +1,4 @@
 from model import Cell
-from view import View
 
 class Grid:
     def __init__(self, v):

@@ -46,18 +46,9 @@ class View:
         exit()
 
     def build_controls(self, controls):
-        # Button to reset
-        reset = tk.Button(controls, text="Reset", command=lambda: self.c.reset())
-        reset.pack(side="left", padx=25)
         # Button to generate random seed
         randomise = tk.Button(controls, text="Randomise", command=lambda: self.c.randomise())
         randomise.pack(side="left", padx=25)
-        # Button to pause
-        pause = tk.Button(controls, text="Pause", command=lambda: self.c.pause())
-        pause.pack(side="left", padx=25)
-        # Button to play
-        play = tk.Button(controls, text="Play", command=lambda: self.c.play())
-        play.pack(side="left", padx=25)
         # Button to step
         step = tk.Button(controls, text="Step", command=lambda: self.c.step())
         step.pack(side="left", padx=25)

@@ -1,5 +1,4 @@
 from model import Grid
-import time
 
 class Model:
     def __init__(self, v):

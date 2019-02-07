@@ -1,7 +1,6 @@
 import tkinter as tk
 from view import View as view
 from model import Model as model
-import time
 from random import randint
 
 class Controller():
@@ -20,23 +19,9 @@ class Controller():
             for y in range(14):
                 dead_or_alive = randint(0,1)
                 self.get_cell(x,y).alive=dead_or_alive
+                self.get_cell(x, y).next_state = dead_or_alive
+        self.step
 
-        self.m.g.update_grid()
-
-    def reset():
-        pass
-
-    def play(self):
-        while not self.pause:
-            self.step()
-            time.sleep(1)
-
-
-    def pause(self):
-        if self.pause:
-            self.pause = False
-        else:
-            self.pause = True
 
     def step(self):
         self.m.step()
